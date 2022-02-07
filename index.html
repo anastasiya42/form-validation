@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8">
+	<title>Project 8</title>
+	<link rel="stylesheet" href="formstyles.css">
+    
+
+</head>
+
+<body>
+
+	<div id="wrapper">
+
+		<header>
+			<h1>Anastasiya Aleksandrova</h1>
+			<h3>Form Validation</h3>
+		</header>
+		
+		<article>
+		
+			<h3>HTML5 Form Validation</h3>
+			<!-- Use the paragraph elements below to discuss HTML5 form validation -->
+			<p>HTML5 form validation is useful because not only does it validate forms to ensure correct information is inputted, but it also eases the burden on Javascript.</p>
+			<p>It allows for validation to occur on the client side in browsers that support its new features.</p>
+			
+			<h3>JavaScript Form Validation</h3>
+			<!-- Use the paragraph elements below to discuss JavaScript form validation -->
+			<p>Javascript gives even more access to ways to validate forms.</p>
+			<p>Functions can be called at various times such as before or after a form is submitted. These function can test against things such as empty fields, or test against a pattern to ensure information is correct.</p>
+		
+		</article>
+
+		<form id="form">
+		
+			<fieldset>
+				<legend>Contact Information</legend>
+			
+				<label for="fname">First Name:</label>
+				<input type="text" name="fname" id="fname" pattern="[A-Za-z ]+" required>
+				
+				<label for="lname">Last Name:</label>
+				<input type="text" name="lname" id="lname">
+				
+				<label for="email">Email:</label>
+				<input type="email" name="email" id="email" required>
+				
+				<label for="number">Telephone:</label>
+				<input type="text" name="number" id="phone">
+				
+				<label for="dob">Date of Birth:</label>
+				<input type="date" name="dob" id="dob">
+				
+				<label for="career">Preferred Industry:</label>
+				  <select name="career" id="career">
+				  <option>Finance</option>
+				  <option>Engineering</option>
+				  <option>Medical</option>
+				  <option>Government</option>
+				</select>
+				
+			</fieldset>
+			
+			<fieldset>
+			
+				<legend>Address Information</legend>
+				
+				<label for="add1">Address 1:</label>
+				<input type="text" name="address1" id="address1">
+				
+				<label for="add2">Address 2:</label>
+				<input type="text" name="address2" id="address2">
+				
+				<label for="city">City:</label>
+				<input type="text" name="city" id="city">
+				
+				<label for="st">State:</label>
+				<input type="text" name="state" id="state" size="2" maxlength="2">
+				
+				<label for="zip">Zip:</label>
+				<input type="number" name="zip" id="zip">
+				
+				<label for="comments">Comments:</label><textarea cols="25" rows="5"></textarea>
+				
+			</fieldset>
+			
+			<fieldset class="submit">
+				<input type="submit" id="submit" name="comments" value="Submit" class="submitbtn">
+			</fieldset>
+
+		</form>
+		
+	</div>
+	<script src="scripts.js"></script>
+</body>
+</html>
